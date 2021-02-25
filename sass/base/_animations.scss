@@ -1,0 +1,35 @@
+@keyframes heartbeat {
+    from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes cuprotate {
+    from {
+        transform: rotate(15deg) 
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    to {
+        transform: rotate(15deg);
+    }
+}
+
+@keyframes shoeanimate {
+    from {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}

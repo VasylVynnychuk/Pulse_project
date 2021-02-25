@@ -28,4 +28,37 @@
             text-transform: uppercase;
         }
     }
+    &__heart {
+        &_animated {
+            animation-name: heartbeat;
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(1, 0.79, 0, -0.74);
+            animation-iteration-count: infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+    &__cup {
+        &_animated {
+            animation-name: cuprotate;
+            animation-duration: 0.8s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            &:hover {
+                animation-play-state: paused;
+            }
+        }
+    }
+    &__shoe {
+        &_animated {
+            animation-name: shoeanimate;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+        &:hover {
+            animation-play-state: paused;
+        }
+    }
 }
