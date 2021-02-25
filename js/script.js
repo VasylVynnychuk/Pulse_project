@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
     $('.carousel__inner').slick({
         prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/right.svg"></button>',
@@ -111,4 +111,13 @@ $(document).ready(function(){
         $('html, body').animate({scrollTop: $(_href).offset().top + 'px'});
         return false;
     });
+
+    // Rewiew section animation
+
+    new WOW().init();
+});
+
+$(window).on('load', function(){
+
+    new WOW().init(); 
 });
