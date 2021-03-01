@@ -117,6 +117,7 @@
         }
         &__wrapper {
             display: flex;
+            position: relative;
             width: 200%;
             width: calc(200% + 40px);
         }
@@ -138,10 +139,11 @@
             transform: translateX(0%);
             padding-right: 20px;
             transition: 0.3s all;
-            padding-left: 19px;
+            padding-left: 0px;
             margin-bottom: 0;
             list-style-type: none;
             &_active {
+                padding-left: 19px;
                 transform: translateX(-100%);
                 margin-left: 0px;
             }
@@ -165,16 +167,24 @@
         }
         &__back {
             position: absolute;
-            bottom: -3px;
-            left: 50%;
-            transform: translateX(calc(-50% - 14px));
+            bottom: -4px;
+            left: 75%;
+            transform: translateX(calc(-25% - 20px));
             display: block;
             font-weight: 500;
             font-size: 14px;
             text-decoration-line: underline;
             text-transform: uppercase;
             color: $main-color;
+            transition: .3s all;
+            &_active {
+                left: 25%;
+                transform: translateX(calc(-25% - 20px));
+            }
             &:hover {
+                color: $main-color;
+            }
+            a {
                 color: $main-color;
             }
         }
